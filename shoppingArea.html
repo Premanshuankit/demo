@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-commerce</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  	<!-- Font Awesome Icon -->
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  	<style type="text/css">
+ 
+  		.dropdown {
+  		  position: relative;
+  		  display: inline-block;
+  		}
+
+  		.dropdown-content {
+  		  display: none;
+  		  position: absolute;
+  		  background-color: black/*#f9f9f9*/;
+  		  min-width: 60px;
+  		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		  padding: 12px 16px;
+  		  z-index: 1;
+  		  text-decoration: none;
+
+  		}
+
+  		.dropdown:hover .dropdown-content {
+  		  display: block;
+  		  text-decoration: none;
+  		}
+
+  		span{
+  	   	padding: 0 10px;
+  	    }
+
+		#Women,#Boys,#Girls,#Kids{
+			margin-left: 10px;
+		}
+		.carousel-item img{
+	     	width: 100%;
+	        margin:  0;
+			padding: 0;
+	        height: 550px;
+        }
+        .carousel-indicators li{
+	   		width: 16px;
+    		height: 16px;
+    		border-radius: 8px;
+		}
+      	#secfooter{
+      		text-align: center;
+      		padding-top: 17px;
+
+      	}
+      	#Categorydiv1,#Categorydiv2{
+      		padding-left: 60px;
+      	}
+      	.lasth2{
+      		padding-top: 17px;
+      	}
+      	button{
+      		color: white;
+      		background-color: red;
+      	}
+      	#footerblog{
+      		color: white;
+      	}
+      	#btn_men_women{
+      		/*margin-left: 60px;*/
+      		width: 525px;
+      		height: 41px;
+
+
+      	}
+      	#btn_boys_girls_kids{
+      		width: 517px;
+      		height: 41px;
+      	}
+      	.slide_up_down{
+      		display: none;
+      	}
+      	.ShoppingArea:hover{
+      		text-decoration: none;
+      	}
+      	/*#header{
+      		overflow: hidden;
+      		position: fixed;
+      	    top: 0;
+        	width: 100%;
+      	}*/
+      /*	#header{
+      		position: fixed;
+      		width: 100%;
+      	}*/
+
+  	</style>
+
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+           $("#btn_men").click(function(){
+              $(".slide_up_down").hide().removeClass("slide_up_down");
+           });
+  		});
+  	</script>
+</head>
+
+
+<body>
+<section class="container-fluid">
+	<header class="row bg-warning" id="header">
+		<div class="col-md-8 pt-2"><a href="#" class="ShoppingArea"><h5>ShoppingArea</h5></a></div>
+		<ul class="row list-unstyled col-md-4 pt-2">
+
+			<div class="dropdown">
+			  <a href=""><span>Men</span></a>
+			  <div class="dropdown-content">
+			  <a href="https://www.flipkart.com/search?q=men%20tshirt&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><p>Tshirt</p></a>
+			  <a href="https://www.flipkart.com/search?q=men%20shirt&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><p>Shirt</p></a>
+			  <a href="https://www.flipkart.com/search?q=men%20jeans&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><p>Jeans</p></a>
+              <a href="https://www.flipkart.com/search?q=men%20footwear&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><p>Footwear</p></a>
+			  </div>
+			</div>
+
+			<div class="dropdown">
+			  <a href=""><span id="Women">Women</span></a>
+			  <div class="dropdown-content">
+			  <a href="https://www.flipkart.com/search?q=women%20top&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><p>Top</p></a>
+			  <a href="https://www.flipkart.com/search?q=women%20shirt&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><p>Shirt</p></a>
+			  <a href=""><p>Jeans</p></a>
+			  <a href=""><p>Sandal</p></a>
+			  </div>
+			</div>			
+			<div class="dropdown">
+			  <a href=""><span id="Boys">Boys</span></a>
+			  <div class="dropdown-content">
+			  <a href=""><p>Cap</p></a>
+			  <a href=""><p>Tshirt</p></a>
+			  <a href=""><p>Trousers</p></a>
+			  <a href=""><p>Shoes</p></a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a href=""><span id="Girls">Girls</span></a>
+			  <div class="dropdown-content">
+			  <a href=""><p>Jeans</p></a>
+			  <a href=""><p>Top</p></a>
+			  <a href=""><p>Skirts</p></a>
+			  <a href=""><p>Sandals</p></a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a href=""><span id="Kids">Kids</span></a>
+			  <div class="dropdown-content">
+			  <a href=""><p>Daipers</p></a>
+			  <a href=""><p>Socks</p></a>
+			  <a href=""><p>Tshirt</p></a>
+			  <a href=""><p>Pants</p></a>
+			  </div>
+			</div>
+		</ul>			        
+	</header>
+</section>
+      
+
+    <div class="row container-fluid">
+    	<div class="btn-group col-md-5" id="btn_men_women">
+    	  <button type="button" class="btn btn-primary" id="btn_men">Men</button>
+    	  <button type="button" class="btn btn-primary" id="btn_women">Women</button>
+        </div>
+    	<h3 class="col-md-2"><i><b>Men's Section</b></i></h3>
+    	<div class="col-md-5">
+    		<div class="btn-group" id="btn_boys_girls_kids">
+    		  <button type="button" class="btn btn-primary" id="btn_boys">Boys</button>
+    		  <button type="button" class="btn btn-primary" id="btn_girls">Girls</button>
+    		  <button type="button" class="btn btn-primary" id="btn_kids">Kids</button>
+    		</div>
+    	</div>
+    </div>
+
+    <p class="slide_up_down">some random text</p>
+
+
+  <div class="container-fluid row">
+  <div class="card col-md-3 bg-success">
+    <a href="https://www.flipkart.com/search?q=men%20jeans&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img class="card-img-top rounded-circle" src="https://assets.heart.co.uk/2018/07/men-shopping-1519145680-herowidev4-0.jpg" alt="Card image" style="width:100%"></a>
+    <div class="card-body">
+      <center><h4 class="card-title">Jeans</h4></center>
+      <center><p class="card-text">Our Latest Collection</p></center>
+    </div>
+  </div>
+
+  <div class="card col-md-3 bg-secondary">
+    <div class="card-body ">
+      <center><h4 class="card-title">Shirt</h4></center>
+      <center><p class="card-text">Casual Collection</p></center>
+    </div>
+    <a href=""><img class="card-img-bottom rounded-circle" src="https://www.shopperwear.com/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/n/e/new-spring-double-pocket-mens-fashion-shirt-brand-men-long-sleeved-solid-shirts-slim-fit-casual-men-shirt-social-extra-image-2.jpg" alt="Card image" style="width:100%"></a>
+  </div>
+
+  <div class="card col-md-3 bg-info">
+    <a href="https://www.flipkart.com/search?q=men%20jeans&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img class="card-img-top rounded-circle" src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1295511/2018/5/2/11525248119235-Roadster-Men-Navy--Blue-Melange-Colour-Blocked-T-Shirt-751525248119047-1.jpg" style="width:100%"></a>
+    <div class="card-body">
+      <center><h4 class="card-title">Tshirt</h4></center>
+      <center><p class="card-text">Vneck</p></center>
+    </div>
+  </div>
+
+  <div class="card col-md-3 bg-danger">
+    <div class="card-body">
+      <center><h4 class="card-title">Footwear</h4></center>
+      <center><p class="card-text">Sneakers</p></center>
+    </div>
+    <a href=""><img class="card-img-bottom rounded-circle" src="https://ae01.alicdn.com/kf/HTB1gEWwRFXXXXbkXpXXq6xXFXXXI/2018-mens-Casual-Shoes-men-canvas-shoes-for-men-male-work-outdoor-walking-autumn-breathable-fashion.jpg" alt="Card image" style="width:100%"></a>
+  </div>
+
+  
+</div>
+   <!--  WomenSection -->
+ <h3><i><b><center>Women's Section</center></b></i></h3>
+  <div class="container-fluid row">
+  <div class="card col-md-3 bg-danger">
+    <a href="https://www.flipkart.com/search?q=men%20jeans&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img class="card-img-top rounded-circle" src="https://assets.heart.co.uk/2018/07/men-shopping-1519145680-herowidev4-0.jpg" alt="Card image" style="width:100%"></a>
+    <div class="card-body">
+      <center><h4 class="card-title">Jeans</h4></center>
+      <center><p class="card-text">Our Latest Collection</p></center>
+    </div>
+  </div>
+
+  <div class="card col-md-3 bg-info">
+    <div class="card-body ">
+      <center><h4 class="card-title">Shirt</h4></center>
+      <center><p class="card-text">Casual Collection</p></center>
+    </div>
+    <a href=""><img class="card-img-bottom rounded-circle" src="https://www.shopperwear.com/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/n/e/new-spring-double-pocket-mens-fashion-shirt-brand-men-long-sleeved-solid-shirts-slim-fit-casual-men-shirt-social-extra-image-2.jpg" alt="Card image" style="width:100%"></a>
+  </div>
+
+  <div class="card col-md-3 bg-secondary">
+    <a href="https://www.flipkart.com/search?q=men%20jeans&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img class="card-img-top rounded-circle" src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/1295511/2018/5/2/11525248119235-Roadster-Men-Navy--Blue-Melange-Colour-Blocked-T-Shirt-751525248119047-1.jpg" style="width:100%"></a>
+    <div class="card-body">
+      <center><h4 class="card-title">Tshirt</h4></center>
+      <center><p class="card-text">Vneck</p></center>
+    </div>
+  </div>
+
+  <div class="card col-md-3 bg-success">
+    <div class="card-body">
+      <center><h4 class="card-title">Footwear</h4></center>
+      <center><p class="card-text">Sneakers</p></center>
+    </div>
+    <a href=""><img class="card-img-bottom rounded-circle" src="https://ae01.alicdn.com/kf/HTB1gEWwRFXXXXbkXpXXq6xXFXXXI/2018-mens-Casual-Shoes-men-canvas-shoes-for-men-male-work-outdoor-walking-autumn-breathable-fashion.jpg" alt="Card image" style="width:100%"></a>
+  </div>
+
+
+
+  <section class="container-fluid bg-dark">
+			<header class="row" id="footerblog">
+				<div class="col-md-5 col-sm-12" id="motel" >
+					<h2>Contact</h2>
+					<p>1800-120-1300</p>
+					<p>abcxyz@gmail.com</p>
+				</div>
+
+				<div class="col-md-3 col-sm-12">
+					<section class="container" id="secfooter"><h2>Category List</h2>
+						<header class="row">
+							<div class="col-md-6 row ">
+						         <ul class=" list-unstyled " id="Categorydiv1">
+						         	<li><a href="#">Home</a></li>
+						         	<li><a href="#">About</a></li>
+						         	<li><a href="#">Blog</a></li>
+						         	<li><a href="#">Contact</a></li>
+						         </ul>
+					        </div>
+					        <div class="col-md-6 ">
+						          <ul class=" list-unstyled " id="Categorydiv2">
+						         	<li><a href="#">Home</a></li>
+						         	<li><a href="#">About</a></li>
+						         	<li><a href="#">Blog</a></li>
+						         	<li><a href="#">Contact</a></li>
+						         </ul>
+					        </div>
+						</header>
+					</section>
+				</div>
+                
+                <div class="col-md-4 ">
+				<section>
+					<header>
+				       <div ><h2 class="lasth2">Sign Up </h2>
+					       
+					       <p>Please provide your email</p>
+					       <input type="email" name="email" placeholder="email">
+					       <button>SignUp</button>
+				        </div>
+				    </header>
+				</section>
+				</div>
+
+			</header>
+		</section>
+       
+      <!--  hamburger and asterik symbol
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <i class="fa fa-asterisk" aria-hidden="true"></i> -->
+
+  
+</div>
+</body>
+</html>

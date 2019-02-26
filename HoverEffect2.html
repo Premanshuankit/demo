@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HoverEffect2</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		/*body ul li a{
+			padding-top: 200px;
+		}*/
+		body{
+			margin: 0;
+			padding: 130px;
+			display: flex;
+			justify-content: center;
+			height: 100px;
+			background-color: rgba(70,23,79, 0.5);
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		ul li{
+			list-style: none;
+			margin: 0 30px;
+			transition: 1s;
+		}
+		ul li a{
+			display: block;
+			position: relative;
+			text-decoration: none;
+			padding: 5px;
+			font-size: 18px;
+			font-family: sans-serif;
+			color:  #fff;
+			text-transform: uppercase;
+			transition: 0.5s;
+			/*color: black;*/
+		}
+		ul:hover li a{
+			transform: scale(1.3);
+			opacity: 0.2;
+			filter: blur(5px);
+		}
+		ul li a:hover{
+			transform: scale(2);
+			opacity: 1;
+			filter: blur(0px);
+		}
+		ul li a:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background:  #ff497c;
+			transition: transform 0.5s;
+			transform-origin: right;
+			transform: scaleX(0);
+			z-index: -1px;	
+		}
+		ul li a:hover:before{
+			transition: transform 0.5s;
+			transform-origin: right;
+			/*transform: scaleX(1);*/
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="">Services</a></li>
+		<li><a href="">Blog</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">Clients</a></li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery slideup-slideDown</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		
+
+	}
+		#firstdiv{
+			background-color: pink;
+			padding: 20px;
+		}
+		#seconddiv{
+			background-color: green;
+			padding: 20px;
+		}
+		
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+ 	<script type="text/javascript">
+      $(document).ready(function(){
+
+			$('#firstdiv').hide(700).show(900).slideUp(1000).delay(1000).slideDown(1000);
+		});
+	</script>
+</head>
+<body>
+	<div id="firstdiv">Notication Bar</div><br><br>
+
+    <div id="seconddiv">this is second div
+      <ol class="list">
+      	<li><button>first list item</button></li>
+      </ol>
+
+    </div>
+</body>
+</html>
