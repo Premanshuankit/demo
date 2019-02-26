@@ -1,0 +1,47 @@
+/*@font-face {
+  font-family: myFirstFont;
+  src: url("sansation_light.woff");
+}
+label,input{
+	font-family: myFirstFont;
+}*/
+span{
+	color: red;
+}
+label,h3{
+	color: white;
+}
+label:hover{
+    cursor: pointer;
+}
+form{
+	margin: 20px 530px;
+}
+#email{
+	margin-left: 23px; 
+}
+#phoneNumber{
+	margin-left: 22px;
+}
+#dob{
+	margin-left: 47px;
+}
+.hobby{
+	margin-left: 17px;
+}
+#textarea{
+	margin-left: 8px;
+}
+#submit{
+	margin-left: 187px;
+}
+form{
+	background-color: black;
+	padding: 9px;
+}
+h3{
+	margin-left: 58px;
+}
+#dropdown{
+	margin-left: 135px;
+}
